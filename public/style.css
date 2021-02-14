@@ -1,6 +1,7 @@
 /* --------> common */
 
-.クラス名{
+html{
+    font-size:14px;
 
 }
 
@@ -8,9 +9,75 @@
 
 }
 
+
+
 /* <-------- common */
 
 /* --------> header */
+
+header{
+    font-size:14px;
+}
+
+
+header .brand{
+    font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-weight: normal;
+    font-size: 2.25rem;
+    letter-spacing: 0.5rem;
+    margin-left:10%;
+
+
+}
+
+/*--- ハンバーガーリストのボーダーを削除　---*/
+header .navbar-dark .navbar-toggler {
+    border-color:rgba(0,0,0,0);
+    font-size:0.9rem;
+}
+
+/*--- ハンバーガーリストのアイコン調整 ---*/
+ header.navbar-dark .navbar-toggler-icon {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
+    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 51, 51, 1)'
+    stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    */
+  }
+
+header .navbar-dark .navbar-nav .nav-link:hover{
+    color:rgba(255,255,255,0.5);
+}
+
+#navbarNav{
+    margin-right:10%
+    
+}
+
+header .dropdown-menu{
+    background-color:#343a40;
+    border-radius:0%;
+    border:none;
+}
+
+header .dropdown-menu .dropdown-item{
+    color:#ffffff;
+    padding:10px;
+}
+
+header .dropdown-menu .dropdown-item:hover{
+    color:#ffffff;
+    background-color:rgba(100,100,100,.5); /*rgba(52,58,64,.5)*/
+
+}
+
+/*---ハンバーガーリストに折りたたむ際にnavbarの色を変更---*/
+@media(min-width:1200px){
+    .bg-dark{
+        background-color:rgba(0,0,0,0.5)!important
+    }
+
+}
 
 
 
