@@ -8,16 +8,15 @@ html {
 
 /* --------> header */
 
+header {
+  background-color: #343a40;
+}
 
-
-header .bgbrand{
-  background-image: url(images/logo.png);
-  background-repeat: no-repeat; 
-  background-position:left;
-  background-size: 10rem;
-  height:3rem; 
-  width:15rem;
-  margin-left:5%;
+header .bg-brand {
+  background: url(images/logo.png) no-repeat left/10rem;
+  height: 3rem;
+  width: 15rem;
+  margin-left: 5%;
 }
 
 header #navbarNav {
@@ -25,70 +24,69 @@ header #navbarNav {
 }
 
 header .navbar {
-  background-color: #343a40 ;
   padding: 0;
 }
 
-header .navbar .navbar-nav{
-  padding:1.5rem 0 1.5rem 0;
-}
-
-header .nav-link:hover {
-  color:#ffffff;
-}
-
-.navbar-toggler:focus{
-  outline:none;
+header .navbar .navbar-nav {
+  padding: 1.5rem 0;
 }
 
 header .nav-link {
-  color: #ffffff;
+  color: #fff;
   margin-right: 1.5rem;
-  margin-left:5%;
+  margin-left: 5%;
+}
+
+header .nav-link:hover {
+  color: #fff;
 }
 
 header .dropdown-menu {
-  background-color: #343a40;  
+  background-color: #343a40;
   border-radius: 0;
   border: none;
-  margin-left:5%;
+  margin-left: 5%;
 }
 
-
 header .dropdown-menu .dropdown-item {
-  color: #ffffff;
+  color: #fff;
   padding: 10px 60px 10px 20px;
 }
 
 header .dropdown-menu .dropdown-item:hover {
-  background-color: #343A40; /*rgba(52, 58, 64, 1)*/
+  background-color: #343a40; /*rgba(52, 58, 64, 1)*/
 }
 
-/*--- ハンバーガーリストのアイコン調整 ---*/
-header .navbar-toggler-icon {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-
+/*--- ハンバーガーリストのスタイルの定義１ ---*/
+header .navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-header .navbar-toggler-icon span{
-  height:3px;
-  width:20px;
-  background-color:#ffffff;
-  margin:2px 0 2px 0;
-  border-radius:25%;
+/*--- ハンバーガーリストのスタイルの定義２ ---*/
+header .navbar-toggler span {
+  height: 3px;
+  width: 20px;
+  background-color: #fff;
+  margin: 2px 0;
+  border-radius: 25%;
+}
+
+header .navbar-toggler:focus {
+  outline: none;
 }
 
 @media (min-width: 1200px) {
   /*---ハンバーガーリストに折りたたむ際にnavbarの色を変更---*/
-  header .navbar {
-    background-color: rgba(0, 0, 0, 0.5) ;
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
-  header .navbar-nav .nav-link{
-    color:#ffffff;
+  header .navbar-nav .nav-link {
+    color: #fff;
   }
+
   header .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.5);
   }
@@ -98,7 +96,12 @@ header .navbar-toggler-icon span{
   }
 
   header .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(68,38,6,0.5); /*---hoverしない場合の定義　rgba(52,58,64,1)---*/
+    background-color: rgba(
+      68,
+      38,
+      6,
+      0.5
+    ); /*---hoverしない場合の定義　rgba(52,58,64,1)---*/
   }
 }
 
@@ -111,8 +114,6 @@ header .navbar-toggler-icon span{
 /* --------> footer */
 
 /* <-------- footer */
-
-
 
 /* -----memo ------*/
 /*
