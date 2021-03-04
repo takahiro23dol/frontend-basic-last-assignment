@@ -2,6 +2,8 @@
 
 html {
   font-size: 14px;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* <-------- common */
@@ -9,7 +11,7 @@ html {
 /* --------> header */
 
 header {
-  background-color: #343a40;
+  background-color: #000;
 }
 
 header .bg-brand {
@@ -42,7 +44,7 @@ header .nav-link:hover {
 }
 
 header .dropdown-menu {
-  background-color: #343a40;
+  background-color: #000;
   border-radius: 0;
   border: none;
   margin-left: 5%;
@@ -54,7 +56,7 @@ header .dropdown-menu .dropdown-item {
 }
 
 header .dropdown-menu .dropdown-item:hover {
-  background-color: #343a40; /*rgba(52, 58, 64, 1)*/
+  background-color: #000; /*rgba(52, 58, 64, 1)*/
 }
 
 /*--- ハンバーガーリストのスタイルの定義１ ---*/
@@ -109,6 +111,56 @@ header .navbar-toggler:focus {
 
 /* --------> main */
 
+.top-bg {
+  background: url("images/coffee-918926_1920.jpg") no-repeat top/cover;
+  min-height: 600px;
+  width: 100%;
+  position: relative;
+  top: -80px; /*TODO この後の要素すべてに適応する必要が出る？*/
+  z-index: -1;
+  padding-bottom: 80%; /*TODO paddihg指定することで画像が表示できるが、仕組みがよくわからない*/
+  /* TODO flexboxで指定できていない
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  */
+}
+
+.top-catch {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  writing-mode: vertical-rl;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 33%;
+  left: 44%;
+}
+
+.top-message {
+  background-color: #000;
+  position: relative;
+  top: -80px;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  line-height: 3rem;
+}
+
+.top-message span {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 3rem;
+}
+
+@media (min-width: 900px) {
+  .top-catch {
+    font-size: 3rem;
+  }
+}
+
 /* <-------- main */
 
 /* --------> footer */
@@ -122,5 +174,8 @@ m-2:0.5rem
 m-3:1.0rem
 m-4:1.5rem 
 m-5:3.0rem 
+
+カフェ画像１：<a href="https://pixabay.com/ja/users/qimono-1962238/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1580595">Arek Socha</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1580595">Pixabay</a>からの画像
+カフェ画像２：<a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918926">Free-Photos</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918926">Pixabay</a>からの画像
 
 */
