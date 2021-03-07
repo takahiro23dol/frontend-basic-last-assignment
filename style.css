@@ -12,7 +12,7 @@ html {
 
 header {
   background-color: #000;
-  position: absolute;
+  position: static;
   width: 100%;
 }
 
@@ -109,11 +109,18 @@ header .navbar-toggler:focus {
   }
 }
 
+@media (min-width: 900px) {
+  header {
+    position: absolute;
+    top: 0;
+  }
+}
+
 /* <-------- header */
 
 /* --------> main */
 
-.top-bg {
+#top .top-bg {
   background: url("images/coffee-918926_1920.jpg") no-repeat top/cover;
   height: 500px;
   width: 100%;
@@ -124,7 +131,7 @@ header .navbar-toggler:focus {
   align-items: center;
 }
 
-.top-catch {
+#top .top-catch {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -133,7 +140,7 @@ header .navbar-toggler:focus {
   font-size: 2rem;
 }
 
-.top-message {
+#top .top-message {
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -141,7 +148,7 @@ header .navbar-toggler:focus {
   line-height: 3rem;
 }
 
-.top-message span {
+#top .top-message span {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -149,15 +156,12 @@ header .navbar-toggler:focus {
 }
 
 @media (min-width: 900px) {
-  .top-bg {
-    height: 800px;
+  #top .top-bg {
+    min-height: 800px;
   }
 
-  .top-catch {
-    font-size: 3rem;
-  }
-
-  .top-message span {
+  #top .top-catch,
+  #top .top-message span {
     font-size: 3rem;
   }
 }
