@@ -120,6 +120,7 @@ header .navbar-toggler:focus {
 
 /* --------> main */
 
+/* --- Top ---*/
 #top .top-bg {
   background: url("images/coffee-918926_1920.jpg") no-repeat top/cover;
   height: 500px;
@@ -165,6 +166,72 @@ header .navbar-toggler:focus {
     font-size: 3rem;
   }
 }
+
+/* --- Top End---*/
+
+/* --- overview ---*/
+
+#overview .overview-wrapper {
+  margin: 6rem 5%;
+  background: #eee;
+}
+
+#overview .concept-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#overview .images {
+  background: no-repeat Top/contain;
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+#overview .item1 {
+  background-image: url("images/top_4images_1.jpg");
+}
+
+#overview .item2 {
+  background-image: url("images/top_4images_2.jpg");
+}
+
+#overview .item3 {
+  background-image: url("images/top_4images_3.jpg");
+}
+
+#overview .item4 {
+  background-image: url("images/top_4images_4.jpg");
+}
+
+#overview .concept-msg {
+  color: #000;
+  text-align: center;
+  padding: 4rem 2rem;
+  line-height: 3rem;
+}
+
+#overview .concept-msg span {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+@media (min-width: 960px) {
+  #overview .images {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+
+  #overview .concept-msg span {
+    font-size: 3rem;
+  }
+  
+}
+
+/* --- overview  End---*/
 
 /* <-------- main */
 
