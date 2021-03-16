@@ -6,10 +6,17 @@ html {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-.msg-format1 {
+.msg-format {
   text-align: center;
   padding: 4rem 2rem;
   line-height: 3rem;
+}
+
+.msg-format h2 {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 2rem;
 }
 
 /* <-------- common */
@@ -138,7 +145,7 @@ header .navbar-toggler:focus {
   align-items: center;
 }
 
-#top .top-catch {
+#top h1 {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -152,20 +159,13 @@ header .navbar-toggler:focus {
   color: #fff;
 }
 
-#top .top-msg span {
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  font-size: 2rem;
-}
-
 @media (min-width: 900px) {
   #top .top-bg {
     min-height: 800px;
   }
 
-  #top .top-catch,
-  #top .top-msg span {
+  #top h1,
+  #top .top-msg h2 {
     font-size: 3rem;
   }
 }
@@ -211,12 +211,8 @@ header .navbar-toggler:focus {
   color: #000;
 }
 
-#overview .concept-msg span {
-  font-size: 2rem;
+#overview .concept-msg h2 {
   font-weight: bold;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 @media (min-width: 960px) {
@@ -225,7 +221,7 @@ header .navbar-toggler:focus {
     padding-bottom: 25%;
   }
 
-  #overview .concept-msg span {
+  #overview .concept-msg h2 {
     font-size: 3rem;
   }
 }
