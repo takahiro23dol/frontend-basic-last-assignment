@@ -6,6 +6,12 @@ html {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+.msg-format1 {
+  text-align: center;
+  padding: 4rem 2rem;
+  line-height: 3rem;
+}
+
 /* <-------- common */
 
 /* --------> header */
@@ -141,15 +147,12 @@ header .navbar-toggler:focus {
   font-size: 2rem;
 }
 
-#top .top-message {
+#top .top-msg {
   background-color: #000;
   color: #fff;
-  text-align: center;
-  padding: 4rem 2rem;
-  line-height: 3rem;
 }
 
-#top .top-message span {
+#top .top-msg span {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -162,7 +165,7 @@ header .navbar-toggler:focus {
   }
 
   #top .top-catch,
-  #top .top-message span {
+  #top .top-msg span {
     font-size: 3rem;
   }
 }
@@ -206,9 +209,6 @@ header .navbar-toggler:focus {
 
 #overview .concept-msg {
   color: #000;
-  text-align: center;
-  padding: 4rem 2rem;
-  line-height: 3rem;
 }
 
 #overview .concept-msg span {
@@ -228,7 +228,6 @@ header .navbar-toggler:focus {
   #overview .concept-msg span {
     font-size: 3rem;
   }
-  
 }
 
 /* --- overview  End---*/
