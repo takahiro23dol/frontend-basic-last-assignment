@@ -211,10 +211,6 @@ header .navbar-toggler:focus {
   color: #000;
 }
 
-#overview .concept-msg h2 {
-  font-weight: bold;
-}
-
 @media (min-width: 960px) {
   #overview .images {
     width: 25%;
