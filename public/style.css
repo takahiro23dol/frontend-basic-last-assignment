@@ -233,6 +233,118 @@ header .navbar-toggler:focus {
 
 /* --- overview  End---*/
 
+/* --- main-info Start --- */
+
+#main-info .main-info-wrapper{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin: 6rem 5%;
+  padding-bottom:10%;
+
+}
+
+#main-info .card-image{
+  padding-bottom:60%;
+  background:no-repeat top/contain;
+
+}
+
+#main-info .card-image-1{
+  background-image:url("images/top_3box_1.jpg");
+
+}
+
+
+#main-info .card-image-2{
+  background-image:url("images/top_3box_2.jpg");
+
+}
+
+
+#main-info .card-image-3{
+  background-image:url("images/top_3box_3.jpg");
+
+}
+
+#main-info .card{
+  width:100%;
+  background: #eee;
+  border:none;
+  margin-bottom:20px;
+}
+
+#main-info .card-body{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+#main-info .btn{
+  background-color:#000;
+  color:#fff;
+  text-align:center;
+  border-radius:0;
+  width:200px;
+  padding:20px;
+  margin:40px auto;
+  ;
+}
+
+#main-info .btn:hover{
+  /*color:rgba(68,38,6,)*/
+  background-color:#442606;
+
+}
+
+#main-info .image-cut{
+  width:0;
+  height:0;
+  border-top:70px solid #fff;
+  border-bottom:70px solid transparent;
+  border-left:70px solid #fff;
+  border-right:70px solid transparent;
+}
+
+#main-info .card::before{
+  position:absolute;
+  top:0;
+  left:0;
+  font-size:1.75rem;
+  font-weight:700;  
+}
+
+#main-info .card1::before{
+  content:"COCEPT";
+}
+#main-info .card2::before{
+  content:"SERVICE";
+}
+
+#main-info .card3::before{
+  content:"FLOOR";
+}
+
+#main-info .card-text{
+  line-height:3rem;
+  font-size:1.25rem;
+  padding:0 5%;
+  font-weight:200;
+}
+
+@media(min-width:960px){
+  #main-info .card{
+    width:32%;
+  }
+
+  #main-info .card-image{
+    padding-bottom:40%;
+  
+  }
+
+
+}
+
 /* <-------- main */
 
 /* --------> footer */
@@ -249,5 +361,21 @@ m-5:3.0rem
 
 カフェ画像１：<a href="https://pixabay.com/ja/users/qimono-1962238/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1580595">Arek Socha</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1580595">Pixabay</a>からの画像
 カフェ画像２：<a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918926">Free-Photos</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918926">Pixabay</a>からの画像
+
+cardサンプル
+
+<div class="card" style="width: 18rem;">
+  <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+font-weight:
+
+400:normal
+700:bold
 
 */
