@@ -231,6 +231,11 @@ header .navbar-toggler:focus {
   padding-bottom: 10%;
 }
 
+#main-info .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 #main-info .col-12 {
   margin-bottom: 20px;
 }
@@ -240,61 +245,46 @@ header .navbar-toggler:focus {
   border: none;
 }
 
-#main-info .card-image {
-  padding-bottom: 55%;
-  background: no-repeat top/cover;
-}
-
-#main-info .card-image-1 {
-  background-image: url("images/top_3box_1.jpg");
-}
-
-#main-info .card-image-2 {
-  background-image: url("images/top_3box_2.jpg");
-}
-
-#main-info .card-image-3 {
-  background-image: url("images/top_3box_3.jpg");
-}
-
-#main-info .card-image::before {
+/*画像左上のタイトルの装飾の定義*/
+#main-info .image-cut {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 75px solid #fff;
+  border-bottom: 75px solid transparent;
+  border-left: 75px solid #fff;
+  border-right: 75px solid transparent;
+}
+
+#main-info .image-cut::before {
+  position: absolute;
+  top: -75px;
+  left: -75px;
   font-size: 1.75rem;
   font-weight: 700;
 }
 
-#main-info .card-image-1::before {
-  content: "COCEPT";
+#main-info .cut1::before {
+  content: "CONCEPT";
 }
-#main-info .card-image-2::before {
+
+#main-info .cut2::before {
   content: "SERVICE";
 }
 
-#main-info .card-image-3::before {
+#main-info .cut3::before {
   content: "FLOOR";
-}
-
-#main-info .image-cut {
-  width: 0;
-  height: 0;
-  border-top: 90px solid #fff;
-  border-bottom: 90px solid transparent;
-  border-left: 90px solid #fff;
-  border-right: 90px solid transparent;
-}
-
-#main-info .card-body {
-  display: flex;
-  flex-direction: column;
 }
 
 #main-info .card-text {
   line-height: 3rem;
   font-size: 1.25rem;
-  padding: 0 5%;
+  padding: 0 2rem;
   font-weight: 200;
+}
+
+#main-info .btn-align {
+  text-align: center;
 }
 
 #main-info .btn {
@@ -302,7 +292,7 @@ header .navbar-toggler:focus {
   color: #fff;
   text-align: center;
   border-radius: 0;
-  width: 60%;
+  width: 190px;
   padding: 20px;
   margin: 40px auto;
 }
