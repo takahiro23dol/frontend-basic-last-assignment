@@ -264,15 +264,15 @@ header .navbar-toggler:focus {
   font-weight: 700;
 }
 
-#main-info .cut1::before {
+#main-info .image-cut-concept::before {
   content: "CONCEPT";
 }
 
-#main-info .cut2::before {
+#main-info .image-cut-service::before {
   content: "SERVICE";
 }
 
-#main-info .cut3::before {
+#main-info .image-cut-floor::before {
   content: "FLOOR";
 }
 
@@ -283,18 +283,14 @@ header .navbar-toggler:focus {
   font-weight: 200;
 }
 
-#main-info .btn-align {
-  text-align: center;
-}
-
 #main-info .btn {
+  display: block;
   background-color: #000;
-  color: #fff;
-  text-align: center;
-  border-radius: 0;
   width: 190px;
   padding: 20px;
   margin: 40px auto;
+  border-radius: 0;
+  color: #fff;
 }
 
 #main-info .btn:hover {
