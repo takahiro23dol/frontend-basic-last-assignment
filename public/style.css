@@ -12,7 +12,7 @@ html {
   line-height: 3rem;
 }
 
-.msg-format h2 {
+h2 {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -295,6 +295,108 @@ header .navbar-toggler:focus {
 
 #main-info .btn:hover {
   background-color: #442606;
+}
+
+/* --- main-info End --- */
+
+.news-event-wrapper{
+  background-color:#eee;
+  padding:5% 6rem;
+}
+
+#news-event .news-wrapper,.event-wrapper{
+  width:50%;
+}
+
+#news-event .news-title{
+  padding:2rem 0 2rem 0;
+  font-size:4rem;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+  "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+#news-event .news-title > span{
+  font-size:1.3rem;
+  margin-left:2rem;
+}
+
+#news-event .records > div{
+  border:1px #ddd solid;
+  font-size:1.25rem;
+  background-color:#fff;
+  display:flex;
+}
+
+#news-event .records a{
+  color:inherit;
+  text-decoration:none;
+}
+
+#news-event .records .msg-wrapper{
+  margin:2rem;
+}
+
+#news-event .records .msg{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+#news-event .event-wrapper .records .msg{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+#news-event .records .date{
+  color:rgba(0,0,0,0.5);
+}
+
+#news-event .info-list{
+  text-align:right;
+  margin-top:1rem;
+}
+
+#news-event .info-list:hover{
+  color:rgba(0,0,0,0.5)
+}
+
+
+#news-event .info-list > a  {
+  color:inherit;
+  text-decoration:none;
+}
+
+#news-event .info-list::after{
+  content:">";
+  margin-left:1rem;
+  font-size:1.3rem;
+}
+
+#news-event .img-news{
+  transition-duration:0.5s;
+  height:180px;
+  width:285px;
+}
+
+#news-event .img-news:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+#news-event .img-hidden{
+  overflow:hidden;
+}
+
+@media(max-width:765px){
+  #news-event .img-news{
+    display:none;
+    height:0;
+    width:0;
+  }
 }
 
 /* <-------- main */
