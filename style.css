@@ -413,9 +413,13 @@ header .navbar-toggler:focus {
   text-align: center;
 }
 
+#view-plan .card {
+  height: 100%;
+}
+
 #view-plan .card-header {
   background-color: #a19283;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-size: 1.25rem;
   font-weight: 900;
@@ -444,7 +448,7 @@ header .navbar-toggler:focus {
   background-color: #442607;
 }
 
-#view-plan .col-12 {
+#view-plan .plan {
   margin-bottom: 20px;
 }
 
