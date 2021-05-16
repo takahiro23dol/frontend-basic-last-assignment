@@ -4,6 +4,7 @@ html {
   font-size: 14px;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 .msg-format {
@@ -17,6 +18,25 @@ h2 {
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-size: 2rem;
+}
+
+.btn {
+  display: block;
+  background-color: #000;
+  width: 190px;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 0;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #442606;
+}
+
+.col-12 {
+  margin-bottom: 20px;
 }
 
 /* <-------- common */
@@ -283,20 +303,6 @@ header .navbar-toggler:focus {
   font-weight: 200;
 }
 
-#main-info .btn {
-  display: block;
-  background-color: #000;
-  width: 190px;
-  padding: 20px;
-  margin: 40px auto;
-  border-radius: 0;
-  color: #fff;
-}
-
-#main-info .btn:hover {
-  background-color: #442606;
-}
-
 /* --- main-info End --- */
 
 .news-event-wrapper {
@@ -395,6 +401,62 @@ header .navbar-toggler:focus {
   }
 }
 
+/* --- plan-info End --- */
+
+#view-plan .view-plan-msg-wrapper {
+  padding: 50px 70px;
+  text-align: center;
+}
+
+#view-plan .plan-wrapper {
+  padding: 20px 35px;
+  text-align: center;
+}
+
+#view-plan .card {
+  height: 100%;
+}
+
+#view-plan .card-header {
+  background-color: #a19283;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 900;
+  padding: 1.5rem;
+}
+
+#view-plan .list-group-item {
+  text-align: center;
+  padding: 1.75rem;
+}
+
+#view-plan .list-group .list-group-item:nth-child(1) {
+  background-color: #eee;
+}
+
+#view-plan .list-group .list-group-item:nth-child(1) span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#view-plan .plan:nth-child(2) .card {
+  border: #442607 solid 5px;
+}
+
+#view-plan .plan:nth-child(2) .card .card-header {
+  background-color: #442607;
+}
+
+#view-plan .plan {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 960px) {
+  #view-plan h2 {
+    font-size: 3rem;
+  }
+}
 /* <-------- main */
 
 /* --------> footer */
