@@ -460,7 +460,7 @@ header .navbar-toggler:focus {
 
 /*----- bottom ----*/
 
-#bottom .bottom-img {
+#bottom {
   background: url(images/coffee-5149246_1280.jpg) top/cover no-repeat;
   padding-bottom: 200px;
 }
@@ -476,17 +476,17 @@ header .navbar-toggler:focus {
   flex-wrap: wrap;
 }
 
-#bottom .btn-wrapper > div {
-  margin: 20px;
-}
-
 #bottom .btn-wrapper a {
   display: block;
   width: 480px;
   height: 144px;
-  margin: 0 auto;
+  margin: 20px;
   background-color: #fff;
   text-decoration: none;
+}
+
+#bottom .btn-wrapper a:hover .btn-image {
+  transform: scale(1.2);
 }
 
 #bottom .bottom-btn {
@@ -501,28 +501,12 @@ header .navbar-toggler:focus {
   transition-duration: 0.5s;
 }
 
-#bottom .btn-image:hover {
-  transform: scale(1.2);
-}
-
 #bottom .cafe-image {
   background: url(images/pr_bnr1_o.png) left/cover;
 }
 
 #bottom .cowarking-image {
   background: url(images/pr_bnr2_o.png) left/cover;
-}
-
-#bottom .btn-image-cut {
-  position: absolute;
-  left: 45%;
-  top: 0%;
-  width: 0px;
-  height: 0px;
-  border-top: 0 solid transparent;
-  border-bottom: 144px solid #fff;
-  border-left: 72px solid transparent;
-  border-right: 0 solid transparent;
 }
 
 #bottom .btn-txt {
@@ -534,6 +518,19 @@ header .navbar-toggler:focus {
   font-size: 1.25rem;
   background-color: #fff;
   z-index: 1;
+}
+
+#bottom .btn-txt::before {
+  position: absolute;
+  content: "";
+  left: 45%;
+  top: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 0 solid transparent;
+  border-bottom: 144px solid #fff;
+  border-left: 72px solid transparent;
+  border-right: 0 solid transparent;
 }
 
 @media (min-width: 960px) {
