@@ -493,10 +493,11 @@ header .navbar-toggler:focus {
   display: flex;
   position: relative;
   overflow: hidden;
+  background-color: #fff;
 }
 
 #bottom .btn-image {
-  width: 360px;
+  width: 305px;
   height: 144px;
   transition-duration: 0.5s;
 }
@@ -510,7 +511,7 @@ header .navbar-toggler:focus {
 }
 
 #bottom .btn-txt {
-  width: 50%;
+  width: 230px;
   height: 144px;
   padding-top: 60px;
   text-align: center;
@@ -523,10 +524,10 @@ header .navbar-toggler:focus {
 #bottom .btn-txt::before {
   position: absolute;
   content: "";
-  left: 45%;
-  top: 0%;
-  width: 0px;
-  height: 0px;
+  left: 42%;
+  top: 0;
+  width: 0;
+  height: 0;
   border-top: 0 solid transparent;
   border-bottom: 144px solid #fff;
   border-left: 72px solid transparent;
