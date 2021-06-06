@@ -546,6 +546,41 @@ header .navbar-toggler:focus {
 
 /* --------> footer */
 
+footer .footer-info{
+  background-color:#fff;
+}
+
+footer .footer-navigate{
+  background-color:#eee;
+}
+
+footer .footer-navigate ul {
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  padding:50px 0;
+}
+
+footer .footer-navigate ul li{
+  margin-left:10px;
+  padding:5px 10px;
+  font-size:1.25rem;
+}
+
+footer .footer-navigate ul li:nth-child(n+2){
+  border-left: solid 3px;
+
+}
+
+
+footer .footer-copyright{
+  text-align:center;
+  color:#fff;
+  background-color:#000;
+  padding:2rem;
+
+}
+
 /* <-------- footer */
 
 /* -----memo ------*/
